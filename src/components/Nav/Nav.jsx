@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./nav.css";
 import scrollActive from "./utils.js";
-import { AiOutlineHome, AiOutlineUser, AiOutlineMessage, AiOutlineStar } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
+import { BsPatchCheck } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
 
 export const Nav = () => {
@@ -39,7 +40,7 @@ export const Nav = () => {
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <AiOutlineStar />
+        <BsPatchCheck />
       </a>
       <a
         href="#qualification"

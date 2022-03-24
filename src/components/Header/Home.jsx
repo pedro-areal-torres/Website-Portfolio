@@ -11,11 +11,15 @@ export const Home = () => {
   return (
     <section id="home" className="section__home">
       <div className="container header__container">
+        {/* 
         <Particles params={particlesConfig} />
+        */}
         <h3>Hello I'm</h3>
         <h1>Pedro Torres</h1>
         <Typewriter
           options={{
+            delay: 50,
+            deleteSpeed: 25,
             strings: [
               "Full Stack Developer",
               "Software Engineer",
