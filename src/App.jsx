@@ -9,8 +9,11 @@ import {
   Portfolio,
   Qualification,
 } from "./components/index";
+import smoothscroll from 'smoothscroll-polyfill';
 
 const App = () => {
+  smoothscroll.polyfill();
+  window.__forceSmoothScrollPolyfill__ = true;
   return (
     <div>
       <Home />
