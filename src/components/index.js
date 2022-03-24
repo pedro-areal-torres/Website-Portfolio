@@ -1,0 +1,10 @@
+export { About } from "./About/About.jsx";
+export { Contact } from "./Contact/Contact.jsx";
+export { Experience } from "./Experience/Experience.jsx";
+export { Footer } from "./Footer/Footer.jsx";
+export { Home } from "./Header/Home.jsx";
+export { Nav } from "./Nav/Nav.jsx";
+export { Portfolio } from "./Portfolio/Portfolio.jsx";
+export { Services } from "./Services/Services.jsx";
+export { Testimonials } from "./Testimonials/Testimonials.jsx";
+export { Qualification } from "./Qualification/Qualification.jsx";
