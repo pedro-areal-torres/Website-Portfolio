@@ -1,4 +1,4 @@
-nav {
+.nav__menu-desktop {
   background-color: rgba(9, 58, 131, 0.4);
   width: max-content;
   display: block;
@@ -14,7 +14,7 @@ nav {
   backdrop-filter: blur(15px);
 }
 
-nav a {
+.nav__menu-desktop a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
@@ -23,27 +23,27 @@ nav a {
   font-size: 1.1rem;
 }
 
-.nav__item:hover .icon {
+.nav__menu-desktop .nav__item:hover .icon {
   transform: translateY(-0.7rem);
   z-index: var(--z-fixed);
 }
 
-.nav__item:hover .text {
+.nav__menu-desktop .nav__item:hover .text {
   opacity: 1;
   transform: translateY(0.7rem);
 }
 
-.nav__menu ul {
+.nav__menu-desktop ul {
   display: flex;
 }
 
-.nav__menu ul li {
+.nav__menu-desktop ul li {
   position: relative;
   list-style: none;
   width: 4.5rem;
 }
 
-.nav__menu ul li a {
+.nav__menu-desktop ul li a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ nav a {
   font-weight: 500;
 }
 
-.nav__menu ul li a .icon {
+.nav__menu-desktop ul li a .icon {
   position: relative;
   display: block;
   line-height: 0.6rem;
@@ -63,13 +63,13 @@ nav a {
   color: var(--color-primary);
 }
 
-.nav__menu ul li a.active .icon {
+.nav__menu-desktop ul li a.active .icon {
   transform: translateY(-1.9rem);
   color: var(--color-bg);
   z-index: var(--z-fixed);
 }
 
-.nav__menu ul li a .text {
+.nav__menu-desktop ul li a .text {
   position: absolute;
   color: var(--color-primary);
   font-weight: 400;
@@ -80,7 +80,7 @@ nav a {
   transform: translateY(20px);
 }
 
-.nav__menu ul li a.active .text {
+.nav__menu-desktop ul li a.active .text {
   opacity: 1;
   transform: translateY(0.7rem);
 }
@@ -96,37 +96,37 @@ nav a {
   transition: 0.5s;
 }
 
-.nav__menu ul li:nth-child(1).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(1).active ~ .indicator {
   transform: translateX(calc(0.3rem));
 }
 
-.nav__menu ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(4.8rem * 1));
+.nav__menu-desktop ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(4.85rem));
 }
 
-.nav__menu ul li:nth-child(3).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(3).active ~ .indicator {
   transform: translateX(calc(9.35rem));
 }
 
-.nav__menu ul li:nth-child(4).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(4).active ~ .indicator {
   transform: translateX(calc(13.8rem));
 }
 
-.nav__menu ul li:nth-child(5).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(18.3rem));
 }
 
-.nav__menu ul li:nth-child(6).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(6).active ~ .indicator {
   transform: translateX(calc(22.8rem));
 }
 
-.nav__menu ul li:nth-child(7).active ~ .indicator {
+.nav__menu-desktop ul li:nth-child(7).active ~ .indicator {
   transform: translateX(calc(27.3rem));
 }
 
 /* -- TABLETS - SMALL DEVICES -- */
 @media screen and (max-width: 600px) {
-  .nav__menu {
+  .nav__menu-desktop {
     display: none;
   }
 }

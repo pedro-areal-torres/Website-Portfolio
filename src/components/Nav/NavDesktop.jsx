@@ -19,7 +19,7 @@ export const NavDesktop = () => {
   }, [window.scrollY]);
 
   return (
-    <nav className='nav__menu'>
+    <nav className='nav__menu-desktop'>
       <ul>
         {navListDesktop.map(({ id, sectionId, icon, name }) => {
           return (

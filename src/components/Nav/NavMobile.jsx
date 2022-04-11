@@ -14,7 +14,7 @@ export const NavMobile = () => {
   };
 
   return (
-    <nav className='nav__container'>
+    <nav className='nav__container-mobile'>
       <img src={PT_LOGO} alt='Website Logo' className='nav__logo' />
       <div
         className={`nav__menu ${showNavBar ? 'show-menu' : ''}`}
@@ -26,7 +26,7 @@ export const NavMobile = () => {
               <li className='nav__item' key={id}>
                 <a href={sectionId} className='nav__link'>
                   <span className='nav__icon'>{icon}</span>
-                  <span className=''>{name}</span>
+                  <span className='nav__descr'>{name}</span>
                 </a>
               </li>
             );
