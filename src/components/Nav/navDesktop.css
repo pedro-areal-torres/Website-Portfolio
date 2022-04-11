@@ -1,0 +1,132 @@
+nav {
+  background-color: rgba(9, 58, 131, 0.4);
+  width: max-content;
+  display: block;
+  padding: 0.2rem 1.7rem;
+  z-index: var(--z-fixed);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+.nav__item:hover .icon {
+  transform: translateY(-0.7rem);
+  z-index: var(--z-fixed);
+}
+
+.nav__item:hover .text {
+  opacity: 1;
+  transform: translateY(0.7rem);
+}
+
+.nav__menu ul {
+  display: flex;
+}
+
+.nav__menu ul li {
+  position: relative;
+  list-style: none;
+  width: 4.5rem;
+}
+
+.nav__menu ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav__menu ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 0.6rem;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--color-primary);
+}
+
+.nav__menu ul li a.active .icon {
+  transform: translateY(-1.9rem);
+  color: var(--color-bg);
+  z-index: var(--z-fixed);
+}
+
+.nav__menu ul li a .text {
+  position: absolute;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.nav__menu ul li a.active .text {
+  opacity: 1;
+  transform: translateY(0.7rem);
+}
+
+.indicator {
+  position: absolute;
+  top: -50%;
+  background: var(--color-primary);
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  border: 6px solid var(--color-bg);
+  transition: 0.5s;
+}
+
+.nav__menu ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(0.3rem));
+}
+
+.nav__menu ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(4.8rem * 1));
+}
+
+.nav__menu ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(9.35rem));
+}
+
+.nav__menu ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(13.8rem));
+}
+
+.nav__menu ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(18.3rem));
+}
+
+.nav__menu ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(22.8rem));
+}
+
+.nav__menu ul li:nth-child(7).active ~ .indicator {
+  transform: translateX(calc(27.3rem));
+}
+
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 600px) {
+  .nav__menu {
+    display: none;
+  }
+}

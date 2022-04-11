@@ -2,12 +2,13 @@ import React from "react";
 import {
   About,
   Contact,
+  Education,
   Experience,
   Footer,
   Home,
   Nav,
   Portfolio,
-  Qualification,
+  Skills
 } from "./components/index";
 
 const App = () => {
@@ -17,8 +18,9 @@ const App = () => {
       <Home />
       <Nav />
       <About />
+      <Skills />
       <Experience />
-      <Qualification />
+      <Education />
       <Portfolio />
       <Contact />
       <Footer />
