@@ -5,7 +5,7 @@ export const scrollActive = () => {
   const windowLocation = window.location.href;
 
   sections.forEach((current) => {
-    let paddingPxl = 95;
+    let paddingPxl = 128;
     let sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop,
       sectionId = current.getAttribute('id');
