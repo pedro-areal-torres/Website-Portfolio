@@ -42,6 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4.5rem;
+  row-gap: 1.5rem;
   padding: 1.6rem;
   display: none;
   transition: var(--transition);
@@ -49,7 +50,7 @@
 
 .skill__container .skill .skill__item h3 {
   color: var(--color-primary);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .skill__container .skill .skill__item h5 {
@@ -63,62 +64,103 @@
 }
 
 .skill__container .skill .skill__items.show-items {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: skillFadeIn 1s ease-in;
+  row-gap: 2.5rem;
+}
+
+@keyframes skillFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .skill__arrow {
+  display: flex;
   font-size: 1.5rem;
-}
-
-.expanded {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
   transition: var(--transition);
 }
 
-.item__certificacion {
+.skill__arrow.show-items {
+  transform: none;
+  transition: var(--transition);
+}
+
+/* CERTIFICACIONS */
+.skill__cert {
   display: flex;
 }
 
-.item__certificacion img {
-  max-width: 13rem;
-  max-height: 13rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem var(--color-white);
+.skill__cert img {
+  margin-top: 0.3rem;
+  height: 4rem;
+  width: auto;
 }
 
-.item__certificacion-details {
+.skill__cert-details {
   display: block;
+  margin-left: 1.2rem;
 }
 
-.item__certificacion-title {
+.skill__cert-title {
   color: var(--color-primary);
-  margin-bottom: 0.5rem;
 }
 
-.item__certificacion-entity {
-  margin-bottom: 0.5rem;
+.skill__cert-entity {
+  margin-bottom: 1.5rem;
 }
 
-.item__certificacion-date {
+.skill__cert-descr {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.skill__cert-date {
   color: var(--color-light);
   font-style: italic;
   margin-bottom: 0.5rem;
 }
 
-.item__certificacion-btn {
+.skill__cert-view {
   background-color: var(--color-bg);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   cursor: pointer;
   border-radius: 0.6rem;
   padding: 0.4rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
-.item__certificacion-btn:hover {
+.skill__cert-view:hover {
   background-color: var(--color-white);
   color: var(--color-bg);
   border: 1px solid var(--color-white);
   transition: var(--transition);
 }
 
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 750px) {
+  .skill__container {
+    width: var(--container-width-sm);
+  }
+
+  .skill__container .skill .skill__items.show-items {
+    display: grid;
+    row-gap: 2rem;
+    animation: skillFadeIn 1s ease-in;
+  }
+
+  .skill__container .skill .skill__items.cert__items {
+    grid-template-columns: 1fr;
+  }
+
+  .skill__cert img {
+    height: 2.5rem;
+  }
+}

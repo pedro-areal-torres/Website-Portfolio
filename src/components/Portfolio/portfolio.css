@@ -49,7 +49,8 @@
 
 .portfolio__details-tech-list {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.1rem;
+  flex-wrap: wrap;
 }
 
 .portfolio__details-tech {
