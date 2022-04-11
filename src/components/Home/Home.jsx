@@ -3,7 +3,7 @@ import { BsMouseFill } from 'react-icons/bs';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Typewriter from 'typewriter-effect';
 
-import { TypewriterStrings } from '../../data/Home/index';
+import { TypewriterStrings } from '../../data/home/index';
 import { HomeCTA } from './HomeCTA';
 import { HomeSocial } from './HomeSocial';
 
