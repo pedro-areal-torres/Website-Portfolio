@@ -1,49 +1,144 @@
 .portfolio__container {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:2.5rem;
+  overflow: initial;
 }
 
-.portfolio__item {
-    background: var(--color-bg-variant);
-    padding:1.2rem;
-    border-radius: 2rem;
-    border:1px solid transparent;
-    transition: var(--transition);
+.portfolio__content {
+  padding: 0 2.5rem;
 }
 
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+.portfolio__img {
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+  width: auto;
+  height: 20rem;
+  max-width: 28rem;
+  max-height: 20rem;
+  box-shadow: 0 0 1rem var(--color-primary-variant);
 }
 
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow:hidden;
+.portfolio__img:hover {
+  box-shadow: 0 0 2rem var(--color-primary-variant);
+  transition: 300ms;
 }
 
-.portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+.portfolio__slide {
+  display: flex;
+  padding: 3rem;
+  padding-top: 0rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.portfolio__item-cta {
+.portfolio__details {
+  margin-left: 2.5rem;
+}
+
+.portfolio__details-title {
+  padding-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+.portfolio__details-description {
+  margin-bottom: 2rem;
+}
+
+.portfolio__details-techs {
+  display: flex;
+  gap: 1rem;
+}
+
+.portfolio__details-tech-list {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.portfolio__details-tech {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-primary-variant);
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.portfolio__details-creationdt {
+  margin-bottom: 1rem;
+  color: var(--color-light);
+  font-style: italic;
+  font-size: small;
+}
+
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  width: var(--container-width-lg);
+}
+
+div.swiper-button-prev {
+  left: 0;
+}
+
+div.swiper-button-next {
+  right: 0;
+}
+
+.portfolio__btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-code {
+  background-color: var(--color-bg);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
+
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 1450px) {
+  .portfolio__container {
+    width: var(--container-width-md) !important;
+  }
+
+  .portfolio__img {
+    max-width: 40%;
+    max-height: 20%;
+  }
+}
+
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 1200px) {
+  .portfolio__slide {
+    display: block;
+    text-align: center;
+  }
+
+  .portfolio__img {
+    width: 21rem;
+    height: 17rem;
+    max-width: 90%;
+    max-height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio__details {
+    margin-left: 0;
+  }
+
+  .portfolio__details-title {
+    margin-top: 1rem;
+  }
+
+  .portfolio__details-techs {
+    justify-content: center;
+  }
+
+  .portfolio__btn {
     display: flex;
+    justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* -- TABLETS - MEDIUM DEVICES -- */
-@media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+  }
 }
 
 /* -- TABLETS - SMALL DEVICES -- */
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
 }

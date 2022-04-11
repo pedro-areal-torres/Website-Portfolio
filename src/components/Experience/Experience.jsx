@@ -1,151 +1,118 @@
-import React from "react";
-import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+import React, { useState } from 'react';
+import { BsCalendar3 } from 'react-icons/bs';
+import { FiLink } from 'react-icons/fi';
+
+import {DATAMON_LOGO, ETM_LOGO, SPMS_LOGO} from '../../data/experience/index';
+import './experience.css';
 
 export const Experience = () => {
-  const frontend = [
-    {
-      id: 1,
-      technology: "ReactJS",
-      level: "2 Years",
-    },
-    {
-      id: 2,
-      technology: "TypeScript",
-      level: "2 Years",
-    },
-    {
-      id: 3,
-      technology: "JavaScript",
-      level: "4+ Years",
-    },
-    {
-      id: 4,
-      technology: "HTML",
-      level: "4+ Years",
-    },
-    {
-      id: 5,
-      technology: "CSS",
-      level: "4+ Years",
-    },
-  ];
-
-  const backend = [
-    {
-      id: 1,
-      technology: "NodeJS",
-      level: "4+ Years",
-    },
-    {
-      id: 2,
-      technology: "Java 8",
-      level: "4+ Years",
-    },
-    {
-      id: 3,
-      technology: "AWS",
-      level: "1 Year",
-    },
-    {
-      id: 4,
-      technology: "Express.js",
-      level: "1 Year",
-    },
-    {
-      id: 5,
-      technology: "Spring",
-      level: "4 Years",
-    },
-    {
-      id: 6,
-      technology: "Hibernate",
-      level: "2+ Years",
-    },
-  ];
-
-  const database = [
-    {
-      id: 1,
-      technology: "MySQL",
-      level: "4+ Years",
-    },
-    {
-      id: 2,
-      technology: "PL/SQL",
-      level: "4+ Years",
-    },
-    {
-      id: 3,
-      technology: "PostgreSQL",
-      level: "4+ Years",
-    },
-    {
-      id: 4,
-      technology: "MongoDB",
-      level: "1 Year",
-    },
-  ];
 
   return (
-    <section id="experience">
-      <h5>The Skills I Have</h5>
-      <h2>My Experience</h2>
+    <section id='experience'>
+      <h2>Experience</h2>
 
-      <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            {frontend.map(({ id, technology, level }) => {
-              return (
-                <article key={id} className="experience__details">
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{technology}</h4>
-                    <small className="text-light">{level}</small>
-                  </div>
-                </article>
-              );
-            })}
+      <div className='experience__container container'>
+        <div className='experience__sections'>
+          <div className='experience__content' id='work'>
+            {/* QUALIFICACAO 1 */}
+            <div className='experience__data'>
+              <div className='experience__data--odd'>
+                <span>
+                  <img
+                    src={SPMS_LOGO}
+                    alt='SPMS Logo'
+                    className='experience__logo experience__logo--saturate'
+                  />
+                </span>
+                <h3 className='experience__title'>Full Stack Developer</h3>
+                <a
+                  href='https://www.spms.min-saude.pt/2020/07/pem/#googtrans(pt%7Cen)'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='experience__subtitle'
+                >
+                  Shared Services for Portuguese Ministry of Health
+                  <span className='experience__hyperlink'>
+                    <FiLink />
+                  </span>
+                </a>
+                <div className='experience__calendar'>
+                  <BsCalendar3 /> 05/2020 - Present
+                </div>
+              </div>
+
+              <div>
+                <span className='experience__rounder'></span>
+                <span className='experience__line'></span>
+              </div>
+            </div>
+
+            {/* QUALIFICACAO 2 */}
+            <div className='experience__data'>
+              <div></div>
+              <div>
+                <span className='experience__rounder'></span>
+                <span className='experience__line'></span>
+              </div>
+              <div>
+                <span>
+                  <img
+                    src={DATAMON_LOGO}
+                    alt='Datamon Logo'
+                    className='experience__logo experience__logo--saturate'
+                  />
+                </span>
+                <h3 className='experience__title'>Software Consultant</h3>
+                <a
+                  href='https://datamonplus.com/pt-pt/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='experience__subtitle'
+                >
+                  DatamonPlus
+                  <span className='experience__hyperlink'>
+                    <FiLink />
+                  </span>
+                </a>
+                <div className='experience__calendar'>
+                  <BsCalendar3 /> 11/2019 - 05/2020
+                </div>
+              </div>
+            </div>
+
+            {/* QUALIFICACAO 3 */}
+            <div className='experience__data'>
+              <div className='experience__data--odd'>
+                <span>
+                  <img
+                    src={ETM_LOGO}
+                    alt='ETM Logo'
+                    className='experience__logo'
+                  />
+                </span>
+                <h3 className='experience__title'>Software Developer</h3>
+                <a
+                  href='https://textilmaganha.com/en/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='experience__subtitle'
+                >
+                  Maganha Textile
+                  <span className='experience__hyperlink'>
+                    <FiLink />
+                  </span>
+                </a>
+                <div className='experience__calendar'>
+                  <BsCalendar3 /> 02/2019 - 10/2019
+                </div>
+              </div>
+
+              <div>
+                <span className='experience__rounder'></span>
+              </div>
+            </div>
           </div>
         </div>
-        {/* END OF FRONTEND */}
-
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            {backend.map(({ id, technology, level }) => {
-              return (
-                <article key={id} className="experience__details">
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{technology}</h4>
-                    <small className="text-light">{level}</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-        {/* END OF BACKEND */}
-
-        <div className="experience__database">
-          <h3>Database</h3>
-          <div className="experience__content">
-            {database.map(({ id, technology, level }) => {
-              return (
-                <article key={id} className="experience__details">
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{technology}</h4>
-                    <small className="text-light">{level}</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-        {/* END OF DATABASE */}
       </div>
     </section>
   );

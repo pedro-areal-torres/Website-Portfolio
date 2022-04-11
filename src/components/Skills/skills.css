@@ -1,0 +1,124 @@
+.skill__container {
+  width: var(--container-width-lg);
+}
+
+.skill__container .skill {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.skill__container .skill .skill__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.4rem var(--color-light);
+}
+
+.skill__container .skill .skill__header:hover {
+  box-shadow: 0 0 1rem var(--color-primary);
+  transition: var(--transition);
+}
+
+.skill__container .skill .skill__header-active {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.skill__container .skill .skill__header h4 {
+  color: var(--color-white);
+}
+
+.skill__container .skill .skill__header .skill__description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill__container .skill .skill__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  padding: 1.6rem;
+  display: none;
+  transition: var(--transition);
+}
+
+.skill__container .skill .skill__item h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.skill__container .skill .skill__item h5 {
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+
+.skill__container .skill .skill__item h5 {
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+
+.skill__container .skill .skill__items.show-items {
+  display: block;
+}
+
+.skill__arrow {
+  font-size: 1.5rem;
+}
+
+.expanded {
+  transform: rotate(180deg);
+  transition: var(--transition);
+}
+
+.item__certificacion {
+  display: flex;
+}
+
+.item__certificacion img {
+  max-width: 13rem;
+  max-height: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem var(--color-white);
+}
+
+.item__certificacion-details {
+  display: block;
+}
+
+.item__certificacion-title {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.item__certificacion-entity {
+  margin-bottom: 0.5rem;
+}
+
+.item__certificacion-date {
+  color: var(--color-light);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.item__certificacion-btn {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  border-radius: 0.6rem;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+}
+
+.item__certificacion-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border: 1px solid var(--color-white);
+  transition: var(--transition);
+}
+
