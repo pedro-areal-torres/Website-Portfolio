@@ -1,8 +1,8 @@
 .container.contact__container {
-  width: 58%;
+  width: 74%;
   display: grid;
-  grid-template-columns: 40% 58%;
-  gap: 12%;
+  grid-template-columns: 31% 64%;
+  gap: 5%;
 }
 
 .contact__options {
@@ -40,7 +40,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 input,
@@ -52,11 +52,21 @@ textarea {
   border: 2px solid var(--color-primary-variant);
   resize: none;
   color: var(--color-white);
-  font-family: "Poppins";
+  font-family: 'Poppins';
+  overflow-y: scroll;
+}
+
+textarea {
+  height: 10.1rem;
 }
 
 /* -- TABLETS - MEDIUM DEVICES -- */
 @media screen and (max-width: 1024px) {
+  .contact__options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -70,8 +80,15 @@ textarea {
     padding: 1rem;
   }
 
+  .contact__options {
+    grid-template-columns: 1fr;
+  }
+  
   .contact__option-onDesktop {
-    display: none;
+    display: none !important;
   }
 
+  textarea {
+    height: 8rem;
+  }
 }
