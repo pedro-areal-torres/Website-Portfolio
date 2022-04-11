@@ -23,12 +23,12 @@
   font-size: 1.1rem;
 }
 
-.nav__menu-desktop .nav__item:hover .icon {
+.nav__menu-desktop .nav__item:not(.active):hover .icon {
   transform: translateY(-0.7rem);
   z-index: var(--z-fixed);
 }
 
-.nav__menu-desktop .nav__item:hover .text {
+.nav__menu-desktop .nav__item:not(.active):hover .text {
   opacity: 1;
   transform: translateY(0.7rem);
 }
