@@ -65,10 +65,13 @@
 
 .skill__container .skill .skill__items.show-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   animation: skillFadeIn 1s ease-in;
   row-gap: 2.5rem;
 }
+
+.skill__container .skill .skill__items.cert__items {
+  grid-template-columns: 1fr;}
 
 @keyframes skillFadeIn {
   from {
@@ -154,10 +157,6 @@
     display: grid;
     row-gap: 2rem;
     animation: skillFadeIn 1s ease-in;
-  }
-
-  .skill__container .skill .skill__items.cert__items {
-    grid-template-columns: 1fr;
   }
 
   .skill__cert img {
