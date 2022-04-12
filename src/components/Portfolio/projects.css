@@ -1,0 +1,11 @@
+div.swiper-button-prev {
+  left: 0;
+}
+
+div.swiper-button-next {
+  right: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
