@@ -17,6 +17,7 @@
   border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
+  box-shadow: 0 0 .4rem var(--color-light);
   transition: var(--transition);
 }
 
