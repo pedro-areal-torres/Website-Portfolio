@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import './contact.css';
-import { MdOutlineEmail } from 'react-icons/md';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import { MdOutlineEmail } from 'react-icons/md';
+
+import './contact.css';
 
 export const Contact = () => {
   return (
@@ -36,7 +37,7 @@ export const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form action='https://formspree.io/f/xlezwqkd' method='POST'>
+        <form action='https://formspree.io/f/xlezwqkd' method='POST' target='_blank'>
           <input type='text' name='name' placeholder='Name' required />
           <input type='email' name='email' placeholder='Email' required />
           <textarea name='message' rows='5' placeholder='Message' required />
