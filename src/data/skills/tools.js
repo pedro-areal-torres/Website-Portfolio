@@ -1,41 +1,41 @@
 const tools = [
     {
-      id: 1,
+      id: "T1",
       technology: "Git",
       level: "4+ Years",
     },
     {
-      id: 2,
+      id: "T2",
       technology: "BitBucket",
       level: "4+ Years",
     },
     {
-      id: 3,
+      id: "T3",
       technology: "SVN",
       level: "4+ Years",
     },
     {
-      id: 4,
+      id: "T4",
       technology: "Jira",
       level: "4+ Years",
     },
     {
-      id: 5,
+      id: "T5",
       technology: "Postman",
       level: "4+ Years",
     },
     {
-      id: 6,
+      id: "T6",
       technology: "SoapUI",
       level: "2 Years",
     },
     {
-      id: 7,
+      id: "T7",
       technology: "Weblogic",
       level: "2 Years",
     },
     {
-      id: 7,
+      id: "T8",
       technology: "Liferay",
       level: "2 Years",
     },

@@ -4,30 +4,30 @@ import ORACLE_LOGO from '../../assets/img/oracle-logo.png';
 
 const certifications = [
   {
-    id: 1,
+    id: "C1",
     logo: ORACLE_LOGO,
     title: 'Java SE 8: Programming I',
     entity: 'Oracle',
-    descr: <p>The Java SE 8 Programmer I course, which is in line with the Oracle Certified Associate (OCA) Certification learning path is aimed at anyone who is keen on <b>learning the fundamentals of Java programming</b> and looking to take the OCA Certification (1Z0-808). It delves into topics such as <b>declarations</b>, <b>flow control</b>, <b>collections</b> and <b>memory management</b>.</p>,
+    descr: <p className='skill__cert-descr'>The Java SE 8 Programmer I course, which is in line with the Oracle Certified Associate (OCA) Certification learning path is aimed at anyone who is keen on <b>learning the fundamentals of Java programming</b> and looking to take the OCA Certification (1Z0-808). It delves into topics such as <b>declarations</b>, <b>flow control</b>, <b>collections</b> and <b>memory management</b>.</p>,
     date: 'Issued Nov 2021 · No Expiration Date',
     credentialURL: 'https://www.dropbox.com/s/28zllb4p5ho68gk/Oracle.pdf?dl=0',
   },
   {
-    id: 2,
+    id: "C2",
     logo: HARVARD_LOGO,
     title: "CS50's Web Programming",
     entity: 'Harvard University (edX)',
-    descr: <p>Design and implementation of web apps with <b>Python</b>, <b>JavaScript</b>, and <b>SQL</b> using frameworks like <b>Django</b>, <b>React</b>, and <b>Bootstrap</b>. Topics include database design, scalability, security, and user experience. 5 projects were developed and presented to successfully complete this certification.</p>,
+    descr: <p className='skill__cert-descr'>Design and implementation of web apps with <b>Python</b>, <b>JavaScript</b>, and <b>SQL</b> using frameworks like <b>Django</b>, <b>React</b>, and <b>Bootstrap</b>. Topics include database design, scalability, security, and user experience. 5 projects were developed and presented to successfully complete this certification.</p>,
     date: 'Issued Jun 2020 · No Expiration Date',
     credentialURL:
       'http://cs50.harvard.edu/certificates/064d7f0c-97ac-495a-b8e1-9c0412bc8c42',
   },
   {
-    id: 3,
+    id: "C3",
     logo: INRH_LOGO,
     title: 'Pedagogical Formation of Trainer',
     entity: 'INRH, Portugal',
-    descr: <p>Pedagogical Formation that develop the skills and knowledge inherent to the role of Adult Trainer. </p>,
+    descr: <p className='skill__cert-descr'>Pedagogical Formation that develop the skills and knowledge inherent to the role of Adult Trainer. </p>,
     date: 'Issued Jun 2020 · No Expiration Date',
     credentialURL:
       'https://www.dropbox.com/s/4qf6j2nk91yg8zg/Certificado%20CCP.png?dl=0',

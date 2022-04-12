@@ -63,7 +63,7 @@ export const Skills = () => {
           <div className={`skill__items ${showFrontend ? 'show-items' : ''}`}>
             {frontend.map(({ id, technology, level }) => {
               return (
-                <div className='skill__item' id={id}>
+                <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
                   <h5>{level}</h5>
                 </div>
@@ -86,7 +86,7 @@ export const Skills = () => {
           <div className={`skill__items ${showBackend ? 'show-items' : ''}`}>
             {backend.map(({ id, technology, level }) => {
               return (
-                <div className='skill__item' id={id}>
+                <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
                   <h5>{level}</h5>
                 </div>
@@ -111,7 +111,7 @@ export const Skills = () => {
           <div className={`skill__items ${showDatabase ? 'show-items' : ''}`}>
             {database.map(({ id, technology, level }) => {
               return (
-                <div className='skill__item' id={id}>
+                <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
                   <h5>{level}</h5>
                 </div>
@@ -134,7 +134,7 @@ export const Skills = () => {
           <div className={`skill__items ${showTools ? 'show-items' : ''}`}>
             {tools.map(({ id, technology, level }) => {
               return (
-                <div className='skill__item' id={id}>
+                <div className='skill__item' key={id}>
                   <h3>{technology}</h3>
                   <h5>{level}</h5>
                 </div>
@@ -162,12 +162,12 @@ export const Skills = () => {
             {certifications.map(
               ({ id, logo, title, entity, descr, date, credentialURL }) => {
                 return (
-                  <div className='skill__cert' id={id}>
+                  <div className='skill__cert' key={id}>
                     <img src={logo}></img>
                     <div className='skill__cert-details'>
                       <h3 className='skill__cert-title'>{title}</h3>
                       <h4 className='skill__cert-entity'>{entity}</h4>
-                      <p className='skill__cert-descr'>{descr}</p>
+                      {descr}
                       <h5 className='skill__cert-date'>{date}</h5>
                       <a
                         href={credentialURL}

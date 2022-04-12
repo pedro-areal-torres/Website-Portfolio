@@ -1,31 +1,31 @@
 const backend = [
   {
-    id: 1,
+    id: "B1",
     technology: "NodeJS",
     level: "4+ Years",
   },
   {
-    id: 2,
+    id: "B2",
     technology: "Java 8",
     level: "4+ Years",
   },
   {
-    id: 3,
+    id: "B3",
     technology: "AWS",
     level: "1 Year",
   },
   {
-    id: 4,
+    id: "B4",
     technology: "Express.js",
     level: "1 Year",
   },
   {
-    id: 5,
+    id: "B5",
     technology: "Spring",
     level: "4 Years",
   },
   {
-    id: 6,
+    id: "B6",
     technology: "Hibernate",
     level: "2+ Years",
   },
