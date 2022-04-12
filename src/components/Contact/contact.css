@@ -1,3 +1,7 @@
+section#contact {
+  height: 70vh;  
+}
+
 .container.contact__container {
   width: 74%;
   display: grid;

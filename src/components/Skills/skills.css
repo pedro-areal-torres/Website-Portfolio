@@ -85,12 +85,12 @@
 .skill__arrow {
   display: flex;
   font-size: 1.5rem;
-  transform: rotateX(180deg);
   transition: var(--transition);
 }
 
 .skill__arrow.show-items {
   transform: none;
+  transform: rotateX(180deg);
   transition: var(--transition);
 }
 

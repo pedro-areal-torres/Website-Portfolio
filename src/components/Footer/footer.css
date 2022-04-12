@@ -2,7 +2,6 @@ footer {
     padding:3rem 0;
     text-align: center;
     font-size:0.9rem;
-    margin-top:2rem;
 }
 
 .footer__copyright {
@@ -13,3 +12,9 @@ footer {
     justify-content: center;
 }
 
+/* -- TABLETS - MEDIUM DEVICES -- */
+@media screen and (max-width: 1225px) {
+    footer {
+        margin-top:4rem;
+    }
+}

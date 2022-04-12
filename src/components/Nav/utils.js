@@ -1,8 +1,7 @@
 // Change active menu select on nav bar on user scroll
-export const scrollActive = () => {
+export const sectionActive = () => {
   const scrollY = window.pageYOffset + 1;
   const sections = document.querySelectorAll('section[id]');
-  const windowLocation = window.location.href;
 
   sections.forEach((current) => {
     let paddingPxl = 128;
@@ -11,8 +10,8 @@ export const scrollActive = () => {
       sectionId = current.getAttribute('id');
 
     if (
-      scrollY >= sectionTop &&
-      scrollY < sectionTop + sectionHeight + paddingPxl
+      scrollY >= sectionTop - paddingPxl &&
+      scrollY < sectionTop + sectionHeight
     ) {
       document.getElementById('nav__' + sectionId).classList.add('active');
       document

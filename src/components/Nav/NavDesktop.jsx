@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { navListDesktop } from '../../data/nav/index';
-import { scrollActive } from './utils.js';
+import { sectionActive } from './utils.js';
 
 import './navDesktop.css';
 
@@ -9,14 +9,14 @@ export const NavDesktop = () => {
 
   useEffect(() => {
     // Initiate the event handler
-    window.addEventListener('scroll', scrollActive);
+    window.addEventListener('scroll', sectionActive);
 
     
-    scrollActive();
+    sectionActive();
 
     // Clean up the event every time the component is re-rendered
     return () => {
-      window.removeEventListener('scroll', scrollActive);
+      window.removeEventListener('scroll', sectionActive);
     };
   }, [window.scrollY]);
 
