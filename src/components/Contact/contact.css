@@ -1,5 +1,5 @@
 section#contact {
-  height: auto;  
+  min-height: 70vh;  
 }
 
 .container.contact__container {
