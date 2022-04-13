@@ -211,6 +211,10 @@
 
 /* -- TABLETS - SMALL DEVICES -- */
 @media screen and (max-width: 600px) {
+  .about__title {
+    font-size: 1.8rem !important;
+  }
+
   .about__me {
     display: none;
   }

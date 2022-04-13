@@ -1,0 +1,26 @@
+div.swiper-button-prev {
+  left: 0;
+}
+
+div.swiper-button-next {
+  right: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
+
+/* -- TABLETS - SMALL DEVICES -- */
+@media screen and (max-width: 600px) {
+  :root {
+    --swiper-navigation-size: 2rem !important;
+  }
+
+  div.swiper-button-prev {
+    left: -0.1rem;
+  }
+
+  div.swiper-button-next {
+    right: -0.1rem;
+  }
+}

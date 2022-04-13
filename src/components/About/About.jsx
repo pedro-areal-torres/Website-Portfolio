@@ -28,7 +28,7 @@ export const About = () => {
           {aboutMeData.map(({ title, descr }, index) => {
             return (
               <div key={index}>
-                <h2>{title}</h2>
+                <h2 className='about__title'>{title}</h2>
                 <p className='about__description'>{descr}</p>
               </div>
             );

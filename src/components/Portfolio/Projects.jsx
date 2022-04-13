@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import portfolioProj from '../../data/portfolio/index';
 
 // Import Swiper styles
-import './projects.css';
+import './swiper.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -29,6 +29,7 @@ const Projects = () => {
             name,
             img,
             descr,
+            shortDescr,
             techs,
             creationUpdateDt,
             codeUrl,
@@ -39,38 +40,42 @@ const Projects = () => {
                 <img src={img} alt='Slider' className='portfolio__img' />
                 <div className='portfolio__details'>
                   <h2 className='portfolio__details-title'>{name}</h2>
-                  {descr}
-                  <h4 className='portfolio__details-techs'>
-                    Technologies:
-                    <div className='portfolio__details-tech-list'>
+                  <div className='portfolio__details desktop'>{descr}</div>
+                  <div className='portfolio__details mobile'>{shortDescr}</div>
+                  <div className='portfolio__tech'>
+                    <h4 className='portfolio__tech-title'>
+                      Technologies
+                      <span className='portfolio__tech-ddots'>:</span>
+                    </h4>
+                    <div className='portfolio__tech-list'>
                       {techs.map(({ id, name, url }) => {
                         return (
-                        <>
-                          <a
-                            href={url}
-                            className='portfolio__details-tech'
-                            key={id}
-                          >
-                            {name}
-                          </a>
-                        </>
-                        )
+                          <>
+                            <a
+                              href={url}
+                              className='portfolio__tech-item'
+                              key={id}
+                            >
+                              {name}
+                            </a>
+                          </>
+                        );
                       })}
                     </div>
-                  </h4>
+                  </div>
                   <p className='portfolio__details-creationdt'>
                     {creationUpdateDt}
                   </p>
-                  {codeUrl && demoUrl &&
-                  <div className='portfolio__btn'>
-                    <a href={codeUrl} target='_blank' rel='noreferrer'>
-                      <button className='btn btn-code'>GitHub Code</button>
-                    </a>
-                    <a href={demoUrl} target='_blank' rel='noreferrer'>
-                      <button className='btn btn-primary'>Live Demo</button>
-                    </a>
-                  </div>
-                  }
+                  {codeUrl && demoUrl && (
+                    <div className='portfolio__btn'>
+                      <a href={codeUrl} target='_blank' rel='noreferrer'>
+                        <button className='btn btn-code'>GitHub Code</button>
+                      </a>
+                      <a href={demoUrl} target='_blank' rel='noreferrer'>
+                        <button className='btn btn-primary'>Live Demo</button>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </SwiperSlide>

@@ -154,7 +154,7 @@
   }
 
   .skill__container .skill .skill__items.show-items {
-    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
     animation: skillFadeIn 1s ease-in;
   }

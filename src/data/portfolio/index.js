@@ -14,6 +14,12 @@ const portfolioProj = [
         the guesses, tiles will change colour to help players get the word.
       </p>
     ),
+    shortDescr: (
+      <p className='portfolio__details-description'>
+        Wordle is an online 5-letter word game. Usually each day a new word is
+        released, but <b>on this version you can play as many times you want</b>.
+      </p>
+    ),
     techs: [
       {
         id: 1,
@@ -40,6 +46,11 @@ const portfolioProj = [
     name: 'Stocks Universe',
     img: COMMING_SOON,
     descr: (
+      <p className='portfolio__details-description'>
+        Check your favorite stocks details, news, price variation and winners and loosers from each exchange.
+      </p>
+    ),
+    shortDescr: (
       <p className='portfolio__details-description'>
         Check your favorite stocks details, news, price variation and winners and loosers from each exchange.
       </p>
