@@ -51,16 +51,16 @@ const Projects = () => {
                     <div className='portfolio__tech-list'>
                       {techs.map(({ id, name, url }) => {
                         return (
-                          <>
+                          <div key={id}>
                             <a
                               href={url}
                               target='_blank'
                               className='portfolio__tech-item'
-                              key={id}
+                              
                             >
                               {name}
                             </a>
-                          </>
+                          </div>
                         );
                       })}
                     </div>
