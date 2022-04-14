@@ -8,7 +8,7 @@ const certifications = [
     logo: ORACLE_LOGO,
     title: 'Java SE 8: Programming I',
     entity: 'Oracle',
-    descr: <p className='skill__cert-descr'>The Java SE 8 Programmer I course, which is in line with the Oracle Certified Associate (OCA) Certification learning path is aimed at anyone who is keen on <b>learning the fundamentals of Java programming</b> and looking to take the OCA Certification (1Z0-808). It delves into topics such as <b>declarations</b>, <b>flow control</b>, <b>collections</b> and <b>memory management</b>.</p>,
+    descr: <p className='skill__cert-descr'>The Java SE 8 Programmer I course, which is in line with the Oracle Certified Associate (OCA) Certification learning path, is aimed at anyone who is keen on <b>learning the fundamentals of Java programming</b> and looking to take the OCA Certification (1Z0-808). It delves into topics such as <b>declarations</b>, <b>flow control</b>, <b>collections</b> and <b>memory management</b>.</p>,
     date: 'Issued Nov 2021 · No Expiration Date',
     credentialURL: 'https://www.dropbox.com/s/28zllb4p5ho68gk/Oracle.pdf?dl=0',
   },

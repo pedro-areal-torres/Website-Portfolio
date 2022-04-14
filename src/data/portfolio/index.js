@@ -47,12 +47,12 @@ const portfolioProj = [
     img: COMMING_SOON,
     descr: (
       <p className='portfolio__details-description'>
-        Check your favorite stocks details, news, price variation and winners and loosers from each exchange.
+        Check your favorite stocks' details, news, price variation and winners and losers from each exchange.
       </p>
     ),
     shortDescr: (
       <p className='portfolio__details-description'>
-        Check your favorite stocks details, news, price variation and winners and loosers from each exchange.
+        Check your favorite stocks' details, news, price variation and winners and losers from each exchange.
       </p>
     ),
     techs: [
