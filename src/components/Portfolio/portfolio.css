@@ -39,6 +39,10 @@
   margin-bottom: 1.5rem;
 }
 
+.portfolio__details.desktop {
+  margin-left: 0;
+}
+
 .portfolio__details.mobile {
   display: none;
 }

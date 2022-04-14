@@ -1,6 +1,7 @@
 import WORDLE_GAME from '../../assets/img/wordle.gif';
 import COMMING_SOON from '../../assets/img/coming-soon.gif';
 
+
 const portfolioProj = [
   {
     id: 1,
@@ -39,7 +40,7 @@ const portfolioProj = [
     ],
     creationUpdateDt: "Created on: April 2022 · Last Update: April 2022",
     codeUrl: "https://github.com/pedro-areal-torres/Wordle-Game",
-    demoUrl: "https://gorgeous-speculoos-305690.netlify.app/",
+    liveDemoUrl: "https://gorgeous-speculoos-305690.netlify.app/",
   },
   {
     id: 2,

@@ -34,6 +34,7 @@ const Projects = () => {
             creationUpdateDt,
             codeUrl,
             demoUrl,
+            liveDemoUrl,
           }) => (
             <SwiperSlide key={id}>
               <div className='portfolio__slide'>
@@ -53,6 +54,7 @@ const Projects = () => {
                           <>
                             <a
                               href={url}
+                              target='_blank'
                               className='portfolio__tech-item'
                               key={id}
                             >
@@ -66,16 +68,29 @@ const Projects = () => {
                   <p className='portfolio__details-creationdt'>
                     {creationUpdateDt}
                   </p>
-                  {codeUrl && demoUrl && (
-                    <div className='portfolio__btn'>
-                      <a href={codeUrl} target='_blank' rel='noreferrer'>
-                        <button className='btn btn-code'>GitHub Code</button>
-                      </a>
-                      <a href={demoUrl} target='_blank' rel='noreferrer'>
-                        <button className='btn btn-primary'>Live Demo</button>
-                      </a>
-                    </div>
-                  )}
+                  <div className='portfolio__btn'>
+                    {codeUrl && (
+                      <>
+                        <a href={codeUrl} target='_blank' rel='noreferrer'>
+                          <button className='btn btn-code'>GitHub Code</button>
+                        </a>
+                      </>
+                    )}
+                    {demoUrl && (
+                      <>
+                        <a href={demoUrl} target='_blank' rel='noreferrer'>
+                          <button className='btn btn-primary'>Demo</button>
+                        </a>
+                      </>
+                    )}
+                    {liveDemoUrl && (
+                      <>
+                        <a href={liveDemoUrl} target='_blank' rel='noreferrer'>
+                          <button className='btn btn-primary'>Live Demo</button>
+                        </a>
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
