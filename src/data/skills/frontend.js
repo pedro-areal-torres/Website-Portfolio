@@ -16,12 +16,7 @@ const frontend = [
   },
   {
     id: "F4",
-    technology: "HTML",
-    level: "4+ Years",
-  },
-  {
-    id: "F5",
-    technology: "CSS",
+    technology: "HTML/CSS",
     level: "4+ Years",
   },
 ];

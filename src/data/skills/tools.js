@@ -31,11 +31,16 @@ const tools = [
     },
     {
       id: "T7",
-      technology: "Weblogic",
+      technology: "Maven",
       level: "2 Years",
     },
     {
       id: "T8",
+      technology: "Weblogic",
+      level: "2 Years",
+    },
+    {
+      id: "T9",
       technology: "Liferay",
       level: "2 Years",
     },
