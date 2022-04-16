@@ -22,7 +22,6 @@
 }
 
 .experience__hyperlink {
-  color: var(--color-primary);
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
@@ -30,6 +29,11 @@
 .experience__calendar {
   font-size: 1rem;
   color: var(--color-light);
+}
+
+.experience__calendar .experience__calendar-icon {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
 }
 
 .experience__rounder {

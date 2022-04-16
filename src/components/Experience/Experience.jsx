@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { BsCalendar3 } from 'react-icons/bs';
 import { FiLink } from 'react-icons/fi';
 
-import {DATAMON_LOGO, ETM_LOGO, SPMS_LOGO} from '../../data/experience/index';
+import { DATAMON_LOGO, ETM_LOGO, SPMS_LOGO } from '../../data/experience/index';
 import './experience.css';
 
 export const Experience = () => {
-
   return (
     <section id='experience'>
       <h2>Experience</h2>
@@ -32,12 +31,10 @@ export const Experience = () => {
                   className='experience__subtitle'
                 >
                   Shared Services for Portuguese Ministry of Health
-                  <span className='experience__hyperlink'>
-                    <FiLink />
-                  </span>
+                  <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='experience__calendar'>
-                  <BsCalendar3 /> 05/2020 - Present
+                  <BsCalendar3 className='experience__calendar-icon'/> 05/2020 - Present
                 </div>
               </div>
 
@@ -70,12 +67,10 @@ export const Experience = () => {
                   className='experience__subtitle'
                 >
                   DatamonPlus
-                  <span className='experience__hyperlink'>
-                    <FiLink />
-                  </span>
+                  <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='experience__calendar'>
-                  <BsCalendar3 /> 11/2019 - 05/2020
+                  <BsCalendar3 className='experience__calendar-icon'/> 11/2019 - 05/2020
                 </div>
               </div>
             </div>
@@ -98,12 +93,10 @@ export const Experience = () => {
                   className='experience__subtitle'
                 >
                   Maganha Textile
-                  <span className='experience__hyperlink'>
-                    <FiLink />
-                  </span>
+                  <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='experience__calendar'>
-                  <BsCalendar3 /> 02/2019 - 10/2019
+                  <BsCalendar3 className='experience__calendar-icon'/> 02/2019 - 10/2019
                 </div>
               </div>
 

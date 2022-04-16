@@ -34,12 +34,10 @@ export const Education = () => {
                   className='education__subtitle'
                 >
                   Vilnius Gediminas Technical University, Lithuania
-                  <span className='education__hyperlink'>
-                    <FiLink />
-                  </span>
+                  <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='education__calendar'>
-                  <BsCalendar3 /> 09/2018 - 01/2019
+                  <BsCalendar3 className='education__calendar-icon'/> 09/2018 - 01/2019
                 </div>
               </div>
 
@@ -75,12 +73,10 @@ export const Education = () => {
                   className='education__subtitle'
                 >
                   Polytechnic Institute of Porto, Portugal
-                  <span className='education__hyperlink'>
-                    <FiLink />
-                  </span>
+                  <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='education__calendar'>
-                  <BsCalendar3 /> 09/2014- 09/2019
+                  <BsCalendar3 className='education__calendar-icon'/> 09/2014- 09/2019
                 </div>
               </div>
             </div>

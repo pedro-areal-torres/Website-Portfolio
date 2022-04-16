@@ -27,7 +27,6 @@
 }
 
 .education__hyperlink {
-  color: var(--color-primary);
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
@@ -35,6 +34,11 @@
 .education__calendar {
   font-size: 1rem;
   color: var(--color-light);
+}
+
+.education__calendar .education__calendar-icon {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
 }
 
 .education__rounder {
