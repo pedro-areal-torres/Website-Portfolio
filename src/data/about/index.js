@@ -11,8 +11,9 @@ export const outerCircleIcons = [
 export const aboutMeData = [
   {
     title: 'Full Stack Developer',
+    location: 'Relocating to Utrecht, Netherlands on May 1st, 2022',
     descr:
-      '4 years background in creating and executing innovative software solutions. Experienced in all aspects of the software development lifecycle, from concept through to development and delivery, working closely with product owners. Consistently recognized as a hands-on, fast-learner, detail-oriented and highly committed to their roles and established deadlines.',
+      '4-year experience developing and implementing new software solutions. Experienced in all phases of the software development lifecycle, from concept to delivery. Consistently praised for being a hands-on, detail-oriented quick learner who is dedicated to his roles and deadlines.',
   },
 ];
 

@@ -1,6 +1,5 @@
-import WORDLE_GAME from '../../assets/img/wordle.gif';
 import COMMING_SOON from '../../assets/img/coming-soon.gif';
-
+import WORDLE_GAME from '../../assets/img/wordle.gif';
 
 const portfolioProj = [
   {

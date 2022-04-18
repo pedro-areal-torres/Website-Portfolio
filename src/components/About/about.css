@@ -80,6 +80,10 @@
   gap: 1.2rem;
 }
 
+.about__location {
+  color: var(--color-primary)
+}
+
 /* -- OUTER CIRCLE -- */
 .about__me-outer-circle {
   width: 26rem;
@@ -212,7 +216,11 @@
 /* -- TABLETS - SMALL DEVICES -- */
 @media screen and (max-width: 600px) {
   .about__title {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
+  }
+
+  .about__location {
+    font-size: 1.2rem;
   }
 
   .about__me {

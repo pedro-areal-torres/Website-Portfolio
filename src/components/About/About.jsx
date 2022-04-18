@@ -25,10 +25,11 @@ export const About = () => {
           </div>
         </div>
         <div className='about__content'>
-          {aboutMeData.map(({ title, descr }, index) => {
+          {aboutMeData.map(({ title, location, descr }, index) => {
             return (
               <div key={index}>
                 <h2 className='about__title'>{title}</h2>
+                <h3 className='about__location'>{location}</h3>
                 <p className='about__description'>{descr}</p>
               </div>
             );

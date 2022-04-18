@@ -8,7 +8,7 @@ export const HomeCTA = () => {
       <a href='#about' className='btn'>
         About Me
       </a>
-      <a href={CV} download className='btn btn-primary'>
+      <a href={CV} download='CV-Pedro Torres' className='btn btn-primary' target="_blank" >
         Download CV
       </a>
     </div>
