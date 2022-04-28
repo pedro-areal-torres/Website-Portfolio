@@ -82,7 +82,7 @@ const portfolioProj = [
         url: 'https://redux-toolkit.js.org/rtk-query/overview',
       },
     ],
-    creationUpdateDt: "Release Date: 1st May 2022",
+    creationUpdateDt: "Release Date: May 2022",
   },
 ];
 
