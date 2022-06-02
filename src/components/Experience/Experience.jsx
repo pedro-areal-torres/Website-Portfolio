@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsCalendar3 } from 'react-icons/bs';
 import { FiLink } from 'react-icons/fi';
 
-import { DATAMON_LOGO, ETM_LOGO, SPMS_LOGO } from '../../data/experience/index';
+import { DATAMON_LOGO, ETM_LOGO, ING_LOGO, SPMS_LOGO } from '../../data/experience/index';
 import './experience.css';
 
 export const Experience = () => {
@@ -14,6 +14,37 @@ export const Experience = () => {
         <div className='experience__sections'>
           <div className='experience__content' id='work'>
             {/* QUALIFICACAO 1 */}
+            <div className='experience__data'>
+              <div></div>
+              <div>
+                <span className='experience__rounder'></span>
+                <span className='experience__line'></span>
+              </div>
+              <div>
+                <span>
+                  <img
+                    src={ING_LOGO}
+                    alt='ING Logo'
+                    className='experience__logo experience__logo--saturate'
+                  />
+                </span>
+                <h3 className='experience__title'>DevOps Engineer</h3>
+                <a
+                  href='https://www.ing.com/Home.htm'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='experience__subtitle'
+                >
+                  ING Group
+                  <FiLink className='experience__hyperlink' />
+                </a>
+                <div className='experience__calendar'>
+                  <BsCalendar3 className='experience__calendar-icon'/> 07/2022 - Present
+                </div>
+              </div>
+            </div>
+
+            {/* QUALIFICACAO 2 */}
             <div className='experience__data'>
               <div className='experience__data--odd'>
                 <span>
@@ -34,7 +65,7 @@ export const Experience = () => {
                   <FiLink className='experience__hyperlink' />
                 </a>
                 <div className='experience__calendar'>
-                  <BsCalendar3 className='experience__calendar-icon'/> 05/2020 - Present
+                  <BsCalendar3 className='experience__calendar-icon'/> 05/2020 - 06/2022
                 </div>
               </div>
 
@@ -44,7 +75,7 @@ export const Experience = () => {
               </div>
             </div>
 
-            {/* QUALIFICACAO 2 */}
+            {/* QUALIFICACAO 3 */}
             <div className='experience__data'>
               <div></div>
               <div>
@@ -75,7 +106,7 @@ export const Experience = () => {
               </div>
             </div>
 
-            {/* QUALIFICACAO 3 */}
+            {/* QUALIFICACAO 4 */}
             <div className='experience__data'>
               <div className='experience__data--odd'>
                 <span>
