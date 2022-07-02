@@ -1,10 +1,20 @@
 import HARVARD_LOGO from '../../assets/img/harvard-logo.png';
 import INRH_LOGO from '../../assets/img/inrh-logo.png';
 import ORACLE_LOGO from '../../assets/img/oracle-logo.png';
+import DEVOPS_LOGO from '../../assets/img/devops-logo.png';
 
 const certifications = [
   {
-    id: "C1",
+    id: "C4",
+    logo: DEVOPS_LOGO,
+    title: 'DevSecOps Foundation (DSOF)℠ Certification',
+    entity: 'DevOps Institute',
+    descr: <p className='skill__cert-descr'>DevSecOps, Shift left, Security as Code are some of the interlacing paradigm shifts <b>aiming to deliver secure software early and often.</b> The DevSecOps practitioner course is carefully designed to help you understand the principles, practices, tools, and techniques that are essential for any organization to get started with and mature organically in DevSecOps. This 16 hour corse is designed to be highly interactive, and hands on by DevSecOps veterans that bring their lessons working from the trenches.</p>,
+    date: 'Issued Jul 2022 · Expiration Date: Jul 2024',
+    credentialURL: 'https://www.dropbox.com/s/hkrirkiqj1q5b1b/DevOps_DSOF_Certificate.pdf?dl=0',
+  },
+  {
+    id: "C3",
     logo: ORACLE_LOGO,
     title: 'Java SE 8: Programming I',
     entity: 'Oracle',
@@ -23,7 +33,7 @@ const certifications = [
       'http://cs50.harvard.edu/certificates/064d7f0c-97ac-495a-b8e1-9c0412bc8c42',
   },
   {
-    id: "C3",
+    id: "C1",
     logo: INRH_LOGO,
     title: 'Pedagogical Formation of Trainer',
     entity: 'INRH, Portugal',
