@@ -11,7 +11,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Pedro Torres 2022</small>
+        <small>&copy; Pedro Torres 2023</small>
       </div>
     </footer>
   );

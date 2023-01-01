@@ -37,22 +37,24 @@ const portfolioProj = [
         url: 'https://reactjs.org/docs/context.html',
       },
     ],
-    creationUpdateDt: "Created on: April 2022 · Last Update: April 2022",
-    codeUrl: "https://github.com/pedro-areal-torres/Wordle-Game",
-    liveDemoUrl: "https://gorgeous-speculoos-305690.netlify.app/",
+    creationUpdateDt: 'Created on: April 2022 · Last Update: April 2022',
+    codeUrl: 'https://github.com/pedro-areal-torres/Wordle-Game',
+    liveDemoUrl: 'https://gorgeous-speculoos-305690.netlify.app/',
   },
   {
     id: 2,
-    name: 'Stocks Universe',
+    name: 'Laboratory Management',
     img: COMMING_SOON,
     descr: (
       <p className='portfolio__details-description'>
-        Check your favorite stocks' details, news, price variation and winners and losers from each exchange.
+        Web app designed for precision measuring of yarn, threads, fiber, non
+        woven fabrics & various other textile materials.
       </p>
     ),
     shortDescr: (
       <p className='portfolio__details-description'>
-        Check your favorite stocks' details, news, price variation and winners and losers from each exchange.
+        Web app designed for precision measuring of yarn, threads, fiber, non
+        woven fabrics & various other textile materials.
       </p>
     ),
     techs: [
@@ -63,25 +65,26 @@ const portfolioProj = [
       },
       {
         id: 2,
-        name: 'React Router',
-        url: 'https://reactrouter.com/',
+        name: 'React Query',
+        url: 'https://react-query-v3.tanstack.com/',
       },
       {
         id: 3,
-        name: 'React Redux',
-        url: 'https://react-redux.js.org/',
+        name: 'NestJS Redux',
+        url: 'https://nestjs.com/',
       },
       {
         id: 4,
-        name: 'Antdesign',
-        url: 'https://ant.design/',
+        name: 'TypeOrm',
+        url: 'https://typeorm.io/',
       },
       {
         id: 5,
-        name: 'RTK Query',
-        url: 'https://redux-toolkit.js.org/rtk-query/overview',
+        name: 'SQL',
+        url: 'https://www.mysql.com/',
       },
     ],
+    creationUpdateDt: 'Release date: 2Q 2023',
   },
 ];
 
