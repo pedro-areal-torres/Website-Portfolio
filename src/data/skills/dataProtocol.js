@@ -10,16 +10,6 @@ const dataProtocol = [
     level: '4+ Years',
   },
   {
-    id: 'I3',
-    technology: 'JSON',
-    level: '4+ Years',
-  },
-  {
-    id: 'I4',
-    technology: 'YARN',
-    level: '2+ Years',
-  },
-  {
     id: 'I5',
     technology: 'HL7/FHIR',
     level: '2+ Years',
@@ -27,7 +17,7 @@ const dataProtocol = [
   {
     id: 'I6',
     technology: 'GraphQL',
-    level: '6+ Month',
+    level: '<1 Year',
   },
 ];
 

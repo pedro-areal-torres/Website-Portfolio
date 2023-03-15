@@ -11,13 +11,8 @@ const database = [
   },
   {
     id: "D3",
-    technology: "PostgreSQL",
-    level: "4+ Years",
-  },
-  {
-    id: "D4",
-    technology: "MongoDB",
-    level: "1 Year",
+    technology: "Neo4j",
+    level: "<1 Year",
   },
 ];
 

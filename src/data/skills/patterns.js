@@ -1,10 +1,5 @@
 const patterns = [
   {
-    id: 'P1',
-    technology: 'CI/CD',
-    level: '4+ Years',
-  },
-  {
     id: 'P2',
     technology: 'OOP',
     level: '4+ Years',
@@ -22,7 +17,7 @@ const patterns = [
   {
     id: 'P5',
     technology: 'Agile',
-    level: '2+ Years',
+    level: '4+ Years',
   },
 ];
 

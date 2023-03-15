@@ -1,5 +1,10 @@
 const frontend = [
   {
+    id: "F4",
+    technology: "HTML/CSS",
+    level: "4+ Years",
+  },
+  {
     id: "F1",
     technology: "ReactJS",
     level: "2 Years",
@@ -12,12 +17,7 @@ const frontend = [
   {
     id: "F3",
     technology: "JavaScript",
-    level: "4+ Years",
-  },
-  {
-    id: "F4",
-    technology: "HTML/CSS",
-    level: "4+ Years",
+    level: "2 Years",
   },
 ];
 
