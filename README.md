@@ -1,11 +1,15 @@
 ## Personal Website
+
 This is the open source repository of my personal website, built with [React](https://reactjs.org/), [SwiperJS](https://swiperjs.com/), [FormSpree](https://formspree.io/), and hosted on [Netlify](https://www.netlify.com/).
 
 ### See the site live at:
-#### https://www.pedro-areal-torres.me/
+
+#### https://www.pedro-areal-torres.bio/
 
 ## Build
+
 Since this project was built with React, the first thing you'll need is a Code Editor.
+
 1. Make sure you have Node.js installed in your computer, and run:
 
 ```console
@@ -30,6 +34,7 @@ yarn install
 ```console
 yarn start
 ```
+
 Your site is now running at `http://localhost:3000`!
 
 5. Finally, if you want to build the application, use:
